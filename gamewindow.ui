@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWindow</class>
+ <widget class="QMainWindow" name="GameWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>5000</width>
+    <height>5000</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <layout class="QVBoxLayout" name="GameLayout">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>5000</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionLoad"/>
+    <addaction name="actionSave"/>
+   </widget>
+   <widget class="QMenu" name="menufigure">
+    <property name="title">
+     <string>figure</string>
+    </property>
+    <widget class="QMenu" name="menustill_lifes">
+     <property name="title">
+      <string>still lifes</string>
+     </property>
+     <addaction name="actionBlock"/>
+     <addaction name="actionBee_Hive"/>
+     <addaction name="actionBoat"/>
+     <addaction name="actionEater"/>
+     <addaction name="actionLoaf"/>
+     <addaction name="actionTub"/>
+    </widget>
+    <widget class="QMenu" name="menuoscillators">
+     <property name="title">
+      <string>oscillators</string>
+     </property>
+     <addaction name="actionBeacon"/>
+     <addaction name="actionBlinker"/>
+     <addaction name="actionToad"/>
+     <addaction name="actionPulsar"/>
+     <addaction name="actionGalaxy"/>
+    </widget>
+    <widget class="QMenu" name="menuspaceships">
+     <property name="title">
+      <string>spaceships</string>
+     </property>
+     <addaction name="actionGlider"/>
+     <addaction name="actionLight"/>
+     <addaction name="actionMiddle"/>
+     <addaction name="actionHeavy"/>
+    </widget>
+    <widget class="QMenu" name="menugun">
+     <property name="title">
+      <string>gun</string>
+     </property>
+     <addaction name="actionGosper_gun"/>
+     <addaction name="actionSimkiin_gun"/>
+    </widget>
+    <widget class="QMenu" name="menutrain">
+     <property name="title">
+      <string>train</string>
+     </property>
+     <addaction name="actionLight_train"/>
+    </widget>
+    <addaction name="menustill_lifes"/>
+    <addaction name="menuoscillators"/>
+    <addaction name="menuspaceships"/>
+    <addaction name="menugun"/>
+    <addaction name="menutrain"/>
+   </widget>
+   <widget class="QMenu" name="menucell">
+    <property name="title">
+     <string>cell</string>
+    </property>
+    <addaction name="actionEnemy"/>
+    <addaction name="actionConstant"/>
+    <addaction name="actionNuke"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menufigure"/>
+   <addaction name="menucell"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad">
+   <property name="text">
+    <string>load</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionEnemy">
+   <property name="text">
+    <string>enemy</string>
+   </property>
+  </action>
+  <action name="actionConstant">
+   <property name="text">
+    <string>constant</string>
+   </property>
+  </action>
+  <action name="actionNuke">
+   <property name="text">
+    <string>nuke</string>
+   </property>
+  </action>
+  <action name="actionBlock">
+   <property name="text">
+    <string>block</string>
+   </property>
+  </action>
+  <action name="actionBee_Hive">
+   <property name="text">
+    <string>bee-hive</string>
+   </property>
+  </action>
+  <action name="actionBoat">
+   <property name="text">
+    <string>boat</string>
+   </property>
+  </action>
+  <action name="actionEater">
+   <property name="text">
+    <string>eater</string>
+   </property>
+  </action>
+  <action name="actionLoaf">
+   <property name="text">
+    <string>loaf</string>
+   </property>
+  </action>
+  <action name="actionTub">
+   <property name="text">
+    <string>tub</string>
+   </property>
+  </action>
+  <action name="actionBeacon">
+   <property name="text">
+    <string>beacon</string>
+   </property>
+  </action>
+  <action name="actionBlinker">
+   <property name="text">
+    <string>blinker</string>
+   </property>
+  </action>
+  <action name="actionToad">
+   <property name="text">
+    <string>toad</string>
+   </property>
+  </action>
+  <action name="actionPulsar">
+   <property name="text">
+    <string>pulsar</string>
+   </property>
+  </action>
+  <action name="actionGlider">
+   <property name="text">
+    <string>glider</string>
+   </property>
+  </action>
+  <action name="actionLight">
+   <property name="text">
+    <string>light</string>
+   </property>
+  </action>
+  <action name="actionMiddle">
+   <property name="text">
+    <string>middle</string>
+   </property>
+  </action>
+  <action name="actionHeavy">
+   <property name="text">
+    <string>heavy</string>
+   </property>
+  </action>
+  <action name="actionGosper_gun">
+   <property name="text">
+    <string>Gosper gun</string>
+   </property>
+  </action>
+  <action name="actionSimkiin_gun">
+   <property name="text">
+    <string>Simkin gun</string>
+   </property>
+  </action>
+  <action name="actionLight_train">
+   <property name="text">
+    <string>light train</string>
+   </property>
+  </action>
+  <action name="actionGalaxy">
+   <property name="text">
+    <string>galaxy</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
